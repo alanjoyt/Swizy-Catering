@@ -1,0 +1,31 @@
+# Database & Sensitive Credentials
+config/database.php
+!config/database.example.php
+.env
+*.env.local
+
+# Academic Reports, Presentations & Large Documents
+*.docx
+*.pptx
+*.pdf
+
+# IDE configs
+.idea/
+.vscode/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# User uploads (keep existing demo files in git, but ignore future uploads)
+uploads/*
+!uploads/gallery_1.png
+!uploads/gallery_2.png
+!uploads/gallery_3.png
+!uploads/tasty.mp4
+!uploads/.gitkeep
+
+# System temp and backup files
+*.log
+*.bak

@@ -1,0 +1,152 @@
+:root {
+    --primary-gold: #d4af37;
+    --dark-bg: #0a0a0a;
+    --card-bg: rgba(25, 25, 25, 0.9);
+    --text-light: #ffffff;
+    --text-muted: #aaaaaa;
+    --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Glass Card Styles */
+.glass-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    transition: var(--transition);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-gold);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+}
+
+/* Navbar Styles */
+.navbar {
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    transition: var(--transition);
+}
+
+.navbar-brand {
+    color: var(--primary-gold) !important;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-gold) !important;
+}
+
+/* Form Styles */
+.form-control, .form-select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: white;
+}
+
+.form-control:focus, .form-select:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-gold);
+    color: white;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+.form-select option {
+    background: #111;
+    color: #fff;
+}
+
+/* Buttons */
+.btn-gold {
+    background: linear-gradient(45deg, #b8860b, #d4af37);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.btn-gold:hover {
+    background: linear-gradient(45deg, #d4af37, #f3e5ab);
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.btn-outline-gold {
+    background: transparent;
+    color: var(--primary-gold);
+    border: 2px solid var(--primary-gold);
+    border-radius: 30px;
+    padding: 8px 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.btn-outline-gold:hover {
+    background: var(--primary-gold);
+    color: #000;
+}
+
+/* Links */
+.back-link {
+    color: var(--primary-gold);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+/* SweetAlert2 Theme Customization */
+.swal2-popup {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--primary-gold) !important;
+    color: var(--text-light) !important;
+    backdrop-filter: blur(15px);
+}
+.swal2-title {
+    color: var(--primary-gold) !important;
+    font-family: 'Playfair Display', serif;
+}
+.swal2-confirm {
+    background: linear-gradient(45deg, #b8860b, #d4af37) !important;
+    color: #000 !important;
+    font-family: 'Poppins', sans-serif !important;
+}

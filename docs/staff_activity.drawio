@@ -1,0 +1,304 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram id="staff_activity_diagram_id_v2" name="Staff Activity Diagram">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1160" pageHeight="960" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Start Node -->
+        <mxCell id="start_node" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#ffffff;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="40" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="start_dot" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="574" y="44" width="12" height="12" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Start to LOGIN -->
+        <mxCell id="edge_start_login" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start_node" target="act_login">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Action: LOGIN -->
+        <mxCell id="act_login" value="LOGIN" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="530" y="100" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: LOGIN to CHECK Decision -->
+        <mxCell id="edge_login_check" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_login" target="dec_check">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Decision: CHECK -->
+        <mxCell id="dec_check" value="CHECK" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="540" y="200" width="80" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Loopback Arrow: Decision NO to LOGIN -->
+        <mxCell id="edge_check_no_login" value="NO" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;" edge="1" parent="1" source="dec_check" target="act_login">
+          <mxGeometry x="-0.8" width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow: CHECK to Fork Bar -->
+        <mxCell id="edge_check_fork" value="YES" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dec_check" target="fork_bar">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Main Fork Bar (horizontal line, filled black) -->
+        <mxCell id="fork_bar" value="" style="shape=line;html=1;strokeWidth=6;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="320" width="960" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- Action: ASSIGNMENTS DASHBOARD -->
+        <mxCell id="col_dashboard" value="ASSIGNMENTS DASHBOARD" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="170" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Sub Fork Bar -->
+        <mxCell id="sub_fork_col_dashboard" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="480" width="240" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Main Action to Sub Fork -->
+        <mxCell id="edge_col_dashboard_subfork" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="col_dashboard" target="sub_fork_col_dashboard">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Join Bar -->
+        <mxCell id="sub_join_col_dashboard" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="110" y="630" width="240" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Join to Main Join -->
+        <mxCell id="edge_col_dashboard_subjoin_mainjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sub_join_col_dashboard">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Arrow: Fork to col_dashboard -->
+        <mxCell id="edge_fork_col_dashboard" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_dashboard">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Action: VIEW ASSIGNMENTS -->
+        <mxCell id="sub_view_assign" value="VIEW ASSIGNMENTS" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="70" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Fork to Sub Action -->
+        <mxCell id="edge_subfork_sub_view_assign" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_view_assign">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow: Sub Action to Sub Join -->
+        <mxCell id="edge_subjoin_sub_view_assign" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_view_assign">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Action: MARK COMPLETE -->
+        <mxCell id="sub_mark_complete" value="MARK COMPLETE" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="270" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Fork to Sub Action -->
+        <mxCell id="edge_subfork_sub_mark_complete" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_mark_complete">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow: Sub Action to Sub Join -->
+        <mxCell id="edge_subjoin_sub_mark_complete" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_mark_complete">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Action: LEAVE MANAGEMENT -->
+        <mxCell id="col_leaves" value="LEAVE MANAGEMENT" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="520" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Sub Fork Bar -->
+        <mxCell id="sub_fork_col_leaves" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="460" y="480" width="240" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Main Action to Sub Fork -->
+        <mxCell id="edge_col_leaves_subfork" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="col_leaves" target="sub_fork_col_leaves">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Join Bar -->
+        <mxCell id="sub_join_col_leaves" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="460" y="630" width="240" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Join to Main Join -->
+        <mxCell id="edge_col_leaves_subjoin_mainjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sub_join_col_leaves">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Arrow: Fork to col_leaves -->
+        <mxCell id="edge_fork_col_leaves" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_leaves">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Action: REQUEST LEAVE -->
+        <mxCell id="sub_req_leave" value="REQUEST LEAVE" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="420" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Fork to Sub Action -->
+        <mxCell id="edge_subfork_sub_req_leave" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_req_leave">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow: Sub Action to Sub Join -->
+        <mxCell id="edge_subjoin_sub_req_leave" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_req_leave">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Action: VIEW LEAVE HISTORY -->
+        <mxCell id="sub_view_leaves" value="VIEW LEAVE HISTORY" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="620" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Fork to Sub Action -->
+        <mxCell id="edge_subfork_sub_view_leaves" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_view_leaves">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow: Sub Action to Sub Join -->
+        <mxCell id="edge_subjoin_sub_view_leaves" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_view_leaves">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Action: STAFF REPORTS -->
+        <mxCell id="col_reports" value="STAFF REPORTS" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="870" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Sub Fork Bar -->
+        <mxCell id="sub_fork_col_reports" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="810" y="480" width="240" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Main Action to Sub Fork -->
+        <mxCell id="edge_col_reports_subfork" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="col_reports" target="sub_fork_col_reports">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Join Bar -->
+        <mxCell id="sub_join_col_reports" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="810" y="630" width="240" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Join to Main Join -->
+        <mxCell id="edge_col_reports_subjoin_mainjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sub_join_col_reports">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Arrow: Fork to col_reports -->
+        <mxCell id="edge_fork_col_reports" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_reports">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Action: INCOME REPORT -->
+        <mxCell id="sub_inc_rep" value="INCOME REPORT" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="770" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Fork to Sub Action -->
+        <mxCell id="edge_subfork_sub_inc_rep" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_inc_rep">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow: Sub Action to Sub Join -->
+        <mxCell id="edge_subjoin_sub_inc_rep" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_inc_rep">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Sub Action: LEAVE HISTORY REPORT -->
+        <mxCell id="sub_leave_rep" value="LEAVE HISTORY REPORT" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="970" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Sub Fork to Sub Action -->
+        <mxCell id="edge_subfork_sub_leave_rep" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_leave_rep">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow: Sub Action to Sub Join -->
+        <mxCell id="edge_subjoin_sub_leave_rep" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_leave_rep">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1030" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Main Join Bar (horizontal line, filled black) -->
+        <mxCell id="join_bar" value="" style="shape=line;html=1;strokeWidth=6;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="700" width="960" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Main Join to LOGOUT -->
+        <mxCell id="edge_join_logout" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="act_logout">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="705" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Action: LOGOUT -->
+        <mxCell id="act_logout" value="LOGOUT" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="530" y="760" width="100" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: LOGOUT to End Node -->
+        <mxCell id="edge_logout_end" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_logout" target="end_node">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- End Node (Double Circle / Bullseye style) -->
+        <mxCell id="end_node" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#ffffff;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="860" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end_dot" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="574" y="864" width="12" height="12" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

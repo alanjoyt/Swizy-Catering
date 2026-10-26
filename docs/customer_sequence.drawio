@@ -1,0 +1,448 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram id="customer_sequence_diagram_id" name="Customer Sequence Diagram">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="1120" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Lifeline: Customer -->
+        <mxCell id="life_customer" value="Customer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;participant=umlActor;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="20" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for Customer -->
+        <mxCell id="term_customer" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: : Auth &amp; Register -->
+        <mxCell id="life_auth" value=": Auth &amp; Register" style="rounded=1;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for : Auth &amp; Register -->
+        <mxCell id="term_auth" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: : Explore Services -->
+        <mxCell id="life_explore" value=": Explore Services" style="rounded=1;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for : Explore Services -->
+        <mxCell id="term_explore" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: : AI Recommendation -->
+        <mxCell id="life_ai" value=": AI Recommendation" style="rounded=1;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for : AI Recommendation -->
+        <mxCell id="term_ai" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: : Manage Bookings -->
+        <mxCell id="life_bookings" value=": Manage Bookings" style="rounded=1;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for : Manage Bookings -->
+        <mxCell id="term_bookings" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: : Payments &amp; Billing -->
+        <mxCell id="life_billing" value=": Payments &amp; Billing" style="rounded=1;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="780" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for : Payments &amp; Billing -->
+        <mxCell id="term_billing" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: : View Reports -->
+        <mxCell id="life_reports" value=": View Reports" style="rounded=1;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="920" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for : View Reports -->
+        <mxCell id="term_reports" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: : View Profile -->
+        <mxCell id="life_profile" value=": View Profile" style="rounded=1;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for : View Profile -->
+        <mxCell id="term_profile" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: : Customer Feedback -->
+        <mxCell id="life_feedback" value=": Customer Feedback" style="rounded=1;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for : Customer Feedback -->
+        <mxCell id="term_feedback" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Lifeline: DB -->
+        <mxCell id="life_db" value="DB" style="participant=umlDatabase;shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="40" width="100" height="950" as="geometry" />
+        </mxCell>
+        <!-- Termination X for DB -->
+        <mxCell id="term_db" value="X" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="980" width="20" height="20" as="geometry" />
+        </mxCell>
+        <!-- Activation: Customer Main Session -->
+        <mxCell id="act_customer_main" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="85" y="100" width="10" height="920" as="geometry" />
+        </mxCell>
+
+        <!-- Sync Message: Register Account -->
+        <mxCell id="msg_1" value="Register Account" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="100" as="sourcePoint" />
+            <mxPoint x="270" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_1" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="265" y="100" width="10" height="140" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Save Account Details -->
+        <mxCell id="msg_2" value="Save Account Details" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="275" y="120" as="sourcePoint" />
+            <mxPoint x="1500" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_2" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="120" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: Account Created -->
+        <mxCell id="msg_3" value="Account Created" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="150" as="sourcePoint" />
+            <mxPoint x="275" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Sync Message: Login (Credentials) -->
+        <mxCell id="msg_4" value="Login (Credentials)" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="170" as="sourcePoint" />
+            <mxPoint x="270" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_4" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="265" y="170" width="10" height="70" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Verify Credentials -->
+        <mxCell id="msg_5" value="Verify Credentials" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="275" y="190" as="sourcePoint" />
+            <mxPoint x="1500" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_5" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="190" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: Credentials Valid -->
+        <mxCell id="msg_6" value="Credentials Valid" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="220" as="sourcePoint" />
+            <mxPoint x="275" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Reply Message: Login Success -->
+        <mxCell id="msg_7" value="Login Success" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="265" y="240" as="sourcePoint" />
+            <mxPoint x="95" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Sync Message: Browse Menu or Media -->
+        <mxCell id="msg_8" value="Browse Menu or Media" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="270" as="sourcePoint" />
+            <mxPoint x="410" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_8" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="405" y="270" width="10" height="80" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Fetch Menu &amp; Media -->
+        <mxCell id="msg_9" value="Fetch Menu &amp; Media" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="415" y="295" as="sourcePoint" />
+            <mxPoint x="1500" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_9" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="295" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: Menu &amp; Media Data -->
+        <mxCell id="msg_10" value="Menu &amp; Media Data" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="325" as="sourcePoint" />
+            <mxPoint x="415" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Reply Message: Display Services -->
+        <mxCell id="msg_11" value="Display Services" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="405" y="345" as="sourcePoint" />
+            <mxPoint x="95" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Sync Message: Request AI Recommendation -->
+        <mxCell id="msg_12" value="Request AI Recommendation" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="375" as="sourcePoint" />
+            <mxPoint x="550" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_12" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="545" y="375" width="10" height="80" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Fetch AI Recommendations -->
+        <mxCell id="msg_13" value="Fetch AI Recommendations" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="555" y="400" as="sourcePoint" />
+            <mxPoint x="1500" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_13" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="400" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: Menu Packages Data -->
+        <mxCell id="msg_14" value="Menu Packages Data" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="425" as="sourcePoint" />
+            <mxPoint x="555" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Reply Message: Display Recommendations -->
+        <mxCell id="msg_15" value="Display Recommendations" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="545" y="450" as="sourcePoint" />
+            <mxPoint x="95" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Sync Message: Create or Edit Booking -->
+        <mxCell id="msg_16" value="Create or Edit Booking" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="480" as="sourcePoint" />
+            <mxPoint x="690" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_16" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="685" y="480" width="10" height="80" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Save Booking Details -->
+        <mxCell id="msg_17" value="Save Booking Details" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="695" y="505" as="sourcePoint" />
+            <mxPoint x="1500" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_17" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="505" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: Booking Details Saved -->
+        <mxCell id="msg_18" value="Booking Details Saved" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="530" as="sourcePoint" />
+            <mxPoint x="695" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Reply Message: Confirm Booking -->
+        <mxCell id="msg_19" value="Confirm Booking" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="685" y="555" as="sourcePoint" />
+            <mxPoint x="95" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Sync Message: Submit Payment -->
+        <mxCell id="msg_20" value="Submit Payment" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="585" as="sourcePoint" />
+            <mxPoint x="830" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_20" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="825" y="585" width="10" height="80" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Process Invoice &amp; Payment -->
+        <mxCell id="msg_21" value="Process Invoice &amp; Payment" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="835" y="610" as="sourcePoint" />
+            <mxPoint x="1500" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_21" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="610" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: Receipt Generated -->
+        <mxCell id="msg_22" value="Receipt Generated" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="635" as="sourcePoint" />
+            <mxPoint x="835" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Reply Message: Display Invoice -->
+        <mxCell id="msg_23" value="Display Invoice" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="825" y="660" as="sourcePoint" />
+            <mxPoint x="95" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Sync Message: View Spend Reports -->
+        <mxCell id="msg_24" value="View Spend Reports" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="690" as="sourcePoint" />
+            <mxPoint x="970" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_24" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="965" y="690" width="10" height="80" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Fetch History Data -->
+        <mxCell id="msg_25" value="Fetch History Data" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="975" y="715" as="sourcePoint" />
+            <mxPoint x="1500" y="715" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_25" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="715" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: History Data -->
+        <mxCell id="msg_26" value="History Data" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="740" as="sourcePoint" />
+            <mxPoint x="975" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Reply Message: Display Spend Report -->
+        <mxCell id="msg_27" value="Display Spend Report" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="965" y="765" as="sourcePoint" />
+            <mxPoint x="95" y="765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Sync Message: Request Profile View -->
+        <mxCell id="msg_28" value="Request Profile View" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="795" as="sourcePoint" />
+            <mxPoint x="1110" y="795" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_28" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1105" y="795" width="10" height="80" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Fetch User Profile -->
+        <mxCell id="msg_29" value="Fetch User Profile" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1115" y="820" as="sourcePoint" />
+            <mxPoint x="1500" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_29" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="820" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: User Profile Data -->
+        <mxCell id="msg_30" value="User Profile Data" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="845" as="sourcePoint" />
+            <mxPoint x="1115" y="845" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Reply Message: Display Profile -->
+        <mxCell id="msg_31" value="Display Profile" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1105" y="870" as="sourcePoint" />
+            <mxPoint x="95" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Sync Message: Submit Feedback -->
+        <mxCell id="msg_32" value="Submit Feedback" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="900" as="sourcePoint" />
+            <mxPoint x="1250" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_32" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1245" y="900" width="10" height="80" as="geometry" />
+        </mxCell>
+    
+        <!-- Sync Message: Save Feedback Data -->
+        <mxCell id="msg_33" value="Save Feedback Data" style="endArrow=block;html=1;rounded=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1255" y="925" as="sourcePoint" />
+            <mxPoint x="1500" y="925" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <!-- Activation Bar on Target -->
+        <mxCell id="act_33" value="" style="html=1;points=[];fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="925" width="10" height="40" as="geometry" />
+        </mxCell>
+    
+        <!-- Reply Message: Feedback Saved -->
+        <mxCell id="msg_34" value="Feedback Saved" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1495" y="950" as="sourcePoint" />
+            <mxPoint x="1255" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+        <!-- Reply Message: Display Testimonials -->
+        <mxCell id="msg_35" value="Display Testimonials" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;fontSize=10;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1245" y="975" as="sourcePoint" />
+            <mxPoint x="95" y="975" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+    
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

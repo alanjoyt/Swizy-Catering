@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram id="customer_activity_diagram_id_v7" name="Customer Activity Diagram">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Start Node -->
+        <mxCell id="start_node" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#ffffff;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1085" y="40" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="start_dot" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1089" y="44" width="12" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_start_login" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start_node" target="act_login">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Login Activity -->
+        <mxCell id="act_login" value="LOGIN" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="100" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_login_check" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_login" target="dec_check">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Check Decision -->
+        <mxCell id="dec_check" value="CHECK" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="200" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_check_no_login" value="NO" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;labelBackgroundColor=none;" edge="1" parent="1" source="dec_check" target="act_login">
+          <mxGeometry x="-0.8" width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_check_fork" value="YES" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dec_check" target="fork_bar">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Fork Bar -->
+        <mxCell id="fork_bar" value="" style="shape=line;html=1;strokeWidth=6;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="195" y="320" width="1800" height="10" as="geometry" />
+        </mxCell>
+        
+        <!-- Column 1: EXPLORE SERVICES -->
+        <mxCell id="col_services" value="EXPLORE SERVICES" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fork_col_services" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_services">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_fork_col_services" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="210" y="480" width="140" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_col_services_subfork" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="col_services" target="sub_fork_col_services">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_view_menu" value="VIEW MENU &amp; PACKAGES" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="150" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_view_menu" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_view_menu">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_view_menu_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_view_menu">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="210" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_view_media" value="VIEW MEDIA" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="290" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_view_media" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_view_media">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_view_media_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_view_media">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="350" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_join_col_services" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="210" y="640" width="140" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subjoin_col_services_join" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sub_join_col_services">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="280" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Column 2: AI RECOMMENDATION -->
+        <mxCell id="col_ai" value="AI RECOMMENDATION" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="430" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fork_col_ai" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_ai">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_col_ai_join" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="col_ai">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="490" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Column 3: MANAGE BOOKINGS -->
+        <mxCell id="col_bookings" value="MANAGE BOOKINGS" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="790" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fork_col_bookings" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_bookings">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="850" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_fork_col_bookings" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="630" y="480" width="440" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_col_bookings_subfork" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="col_bookings" target="sub_fork_col_bookings">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_view_blocked" value="VIEW BLOCKED DATES" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_view_blocked" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_view_blocked">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_view_blocked_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_view_blocked">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="630" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_create_booking" value="CREATE BOOKING" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="710" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_create_booking" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_create_booking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_create_booking_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_create_booking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="770" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_view_bookings" value="VIEW BOOKINGS" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="850" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_view_bookings" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_view_bookings">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_view_bookings_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_view_bookings">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="910" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_edit_booking" value="EDIT/CANCEL BOOKING" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="990" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_edit_booking" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_edit_booking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1050" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_edit_booking_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_edit_booking">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1050" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_join_col_bookings" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="630" y="640" width="440" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subjoin_col_bookings_join" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sub_join_col_bookings">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="850" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Column 4: PAYMENTS & BILLING -->
+        <mxCell id="col_billing" value="PAYMENTS &amp; BILLING" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fork_col_billing" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_billing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1230" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_fork_col_billing" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="480" width="140" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_col_billing_subfork" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="col_billing" target="sub_fork_col_billing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_add_payment" value="ADD PAYMENT" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_add_payment" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_add_payment">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1160" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_add_payment_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_add_payment">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1160" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_view_invoice" value="VIEW INVOICE" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_view_invoice" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_view_invoice">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1300" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_view_invoice_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_view_invoice">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1300" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_join_col_billing" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="640" width="140" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subjoin_col_billing_join" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sub_join_col_billing">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1230" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Column 5: VIEW REPORTS -->
+        <mxCell id="col_reports" value="VIEW REPORTS" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fork_col_reports" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_reports">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1440" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_col_reports_join" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="col_reports">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1440" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Column 6: VIEW PROFILE -->
+        <mxCell id="col_profile" value="VIEW PROFILE" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fork_col_profile" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_profile">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1590" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_col_profile_join" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="col_profile">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1590" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Column 7: CUSTOMER FEEDBACK -->
+        <mxCell id="col_feedback" value="CUSTOMER FEEDBACK" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="390" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fork_col_feedback" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="col_feedback">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1780" y="325" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_fork_col_feedback" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="480" width="140" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_col_feedback_subfork" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="col_feedback" target="sub_fork_col_feedback">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_add_feedback" value="ADD FEEDBACK" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_add_feedback" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_add_feedback">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1710" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_add_feedback_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_add_feedback">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1710" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_view_feedback" value="VIEW FEEDBACK" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="540" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subfork_sub_view_feedback" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="sub_view_feedback">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1850" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sub_view_feedback_subjoin" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sub_view_feedback">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1850" y="645" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sub_join_col_feedback" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="640" width="140" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_subjoin_col_feedback_join" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sub_join_col_feedback">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="1780" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Main Join Bar -->
+        <mxCell id="join_bar" value="" style="shape=line;html=1;strokeWidth=6;strokeColor=#000000;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="195" y="700" width="1800" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_join_logout" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="act_logout">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1095" y="705" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Action: LOGOUT -->
+        <mxCell id="act_logout" value="LOGOUT" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="750" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_logout_end" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_logout" target="end_node">
+          <mxGeometry width="50" height="50" relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- End Node -->
+        <mxCell id="end_node" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;strokeWidth=2;fillColor=#ffffff;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1085" y="840" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end_dot" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1089" y="844" width="12" height="12" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
